@@ -1,0 +1,45 @@
+=========================================================
+      AURA VIEW - PROJECT RUN INSTRUCTIONS
+=========================================================
+
+1. PREREQUISITES
+----------------
+Make sure you have installed on your system:
+- Python (3.9 or newer)
+- Node.js (and npm)
+- Expo Go App (on your mobile phone)
+
+2. SETUP ENVIRONMENT
+--------------------
+Create a file named .env in the main folder (Aura-View-main) and add:
+SUPABASE_URL=your_supabase_url
+SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
+
+3. HOW TO RUN THE WEB DASHBOARD & BACKEND (FastAPI)
+---------------------------------------------------
+Step A: Open a terminal inside the main 'Aura-View-Final' folder.
+Step B: Create and activate a virtual environment (Recommended):
+          python -m venv venv
+          venv\Scripts\activate
+Step C: Install all python dependencies:
+          pip install -r requirements.txt
+Step D: Start the backend server:
+          python -m uvicorn server:app --host 0.0.0.0 --port 8000 --reload
+Step E: Open your browser and go to:
+          http://localhost:8000
+
+4. HOW TO RUN THE MOBILE APP (React Native / Expo)
+--------------------------------------------------
+Step A: Open a NEW terminal.
+Step B: Navigate into the app folder:
+          cd aura-guard-app
+Step C: Install all node dependencies:
+          npm install
+Step D: Start the Expo server:
+          npm start
+Step E: Press 'a' to open on an Android emulator, OR open the 'Expo Go' app on your physical phone and scan the QR Code.
+Step F: In the App Login screen, enter your Laptop's IP address exactly like this:
+          http://<YOUR_IPV4_ADDRESS>:8000
+          (Make sure your phone and laptop are connected to the SAME WiFi network)
+
+=========================================================

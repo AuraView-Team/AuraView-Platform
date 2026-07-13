@@ -1,0 +1,23 @@
+# Environments & Secrets
+.env
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Node & Expo
+node_modules/
+.expo/
+npm-debug.log
+
+# Heavy AI Model Weights (auto-downloaded via PyTorch)
+yolov5s.pt
+
+# OS & Ide
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Browser Cookies & Secrets
+cookies.txt

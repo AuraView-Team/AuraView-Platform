@@ -1,0 +1,38 @@
+# --- Core Backend & API ---
+fastapi==0.119.0
+uvicorn==0.37.0
+python-dotenv==1.1.1
+python-multipart==0.0.20
+
+# --- WebSockets for Real-Time UI ---
+python-socketio==5.14.1
+python-engineio==4.12.3
+
+# --- Computer Vision & Deep Learning (YOLOv5) ---
+opencv-python==4.11.0.86
+torch==2.8.0
+torchvision==0.23.0
+ultralytics==8.3.211
+
+# --- YOLOv5 Internal Dependencies ---
+seaborn
+pyyaml
+psutil
+thop
+tqdm
+
+# --- Machine Learning & Spatial Analytics ---
+numpy==2.1.2
+pandas==2.3.3
+scikit-learn  # For Linear Regression & DBSCAN Clustering
+
+# --- Cloud Database (PostgreSQL) ---
+supabase
+
+# --- Media & Streaming ---
+yt-dlp==2026.6.9
+
+# --- Security & Networking ---
+httpx==0.28.1
+requests==2.32.5
+websockets==15.0.1
